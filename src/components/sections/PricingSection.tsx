@@ -51,15 +51,16 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <motion.button 
+              <motion.a 
                 whileTap={{ scale: 0.98 }}
-                className={`w-full py-3 rounded-md text-[14px] font-semibold transition-all ${
+                href="tel:+918328513919"
+                className={`w-full py-3 rounded-md text-[14px] font-semibold transition-all text-center ${
                 plan.popular 
                   ? "bg-white text-primary-text hover:bg-white/90" 
                   : "bg-primary-text text-white hover:bg-primary-text/90"
               }`}>
                 {plan.cta}
-              </motion.button>
+              </motion.a>
             </motion.div>
           ))}
         </div>

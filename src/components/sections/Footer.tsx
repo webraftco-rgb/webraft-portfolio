@@ -13,23 +13,32 @@ const Footer = () => {
             <p className="text-secondary-text max-w-sm mb-8 leading-[1.7]">
               We build high-performance websites that help businesses grow. Specialized in modern web design and development for clients across India.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-6">
+              <h4 className="text-[14px] font-bold text-primary-text uppercase tracking-wider">Ready to talk?</h4>
               <a 
-                href="mailto:webraftco@gmail.com" 
-                aria-label="Send us an email"
-                className="text-secondary-text hover:text-accent transition-colors"
+                href="tel:+918328513919"
+                className="px-6 py-3 bg-accent text-white font-bold rounded-md hover:bg-accent-hover transition-all text-center w-fit"
               >
-                <Mail size={20} />
+                Book a Free Call
               </a>
-              <a 
-                href="https://wa.me/918328513919" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="Contact us on WhatsApp"
-                className="text-secondary-text hover:text-accent transition-colors"
-              >
-                <MessageCircle size={20} />
-              </a>
+              <div className="flex gap-4">
+                <a 
+                  href="mailto:webraftco@gmail.com" 
+                  aria-label="Send us an email"
+                  className="text-secondary-text hover:text-accent transition-colors"
+                >
+                  <Mail size={20} />
+                </a>
+                <a 
+                  href="https://wa.me/918328513919" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Contact us on WhatsApp"
+                  className="text-secondary-text hover:text-accent transition-colors"
+                >
+                  <MessageCircle size={20} />
+                </a>
+              </div>
             </div>
           </div>
           

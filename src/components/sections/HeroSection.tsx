@@ -1,11 +1,7 @@
 import { motion } from "motion/react";
 import { fadeIn } from "../../lib/animations";
 
-interface HeroSectionProps {
-  onBookCall: () => void;
-}
-
-const HeroSection = ({ onBookCall }: HeroSectionProps) => {
+const HeroSection = () => {
   return (
     <section className="relative pt-32 pb-24 md:pt-48 md:pb-40 bg-page-bg overflow-hidden group">
       {/* Animated Background Gradient */}
@@ -40,13 +36,13 @@ const HeroSection = ({ onBookCall }: HeroSectionProps) => {
               >
                 Let's Work Together
               </motion.a>
-              <motion.button 
+              <motion.a 
                 whileTap={{ scale: 0.98 }}
-                onClick={onBookCall}
+                href="tel:+918328513919"
                 className="btn-secondary text-center"
               >
                 Book a Free Call
-              </motion.button>
+              </motion.a>
             </div>
             
             <div className="pt-8 border-t border-zinc-border">

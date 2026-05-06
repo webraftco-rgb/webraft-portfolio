@@ -3,11 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "../../data/content";
 
-interface NavigationProps {
-  onBookCall: () => void;
-}
-
-const Navigation = ({ onBookCall }: NavigationProps) => {
+const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -47,12 +43,12 @@ const Navigation = ({ onBookCall }: NavigationProps) => {
               {link.name}
             </a>
           ))}
-          <button 
-            onClick={onBookCall}
+          <a 
+            href="tel:+918328513919"
             className="text-[14px] font-semibold text-accent hover:text-accent-hover transition-colors"
           >
-            Book a call
-          </button>
+            Book a Call
+          </a>
           <a 
             href="#contact" 
             className="btn-primary"
@@ -90,15 +86,13 @@ const Navigation = ({ onBookCall }: NavigationProps) => {
                   {link.name}
                 </a>
               ))}
-              <button 
-                onClick={() => {
-                  onBookCall();
-                  setIsMenuOpen(false);
-                }}
+              <a 
+                href="tel:+918328513919"
+                onClick={() => setIsMenuOpen(false)}
                 className="w-full py-3 text-center text-accent font-bold border border-accent/20 rounded-md"
               >
                 Book a Free Call
-              </button>
+              </a>
               <a 
                 href="#contact" 
                 className="btn-primary w-full py-3 text-center"

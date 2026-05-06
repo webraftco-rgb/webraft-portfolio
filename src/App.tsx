@@ -3,12 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense } from "react";
 import { Loader2 } from "lucide-react";
 import SectionDivider from "./components/SectionDivider";
 import Navigation from "./components/layout/Navigation";
 import WhatsAppFloat from "./components/ui/WhatsAppFloat";
-import CalendlyModal from "./components/ui/CalendlyModal";
 
 // Lazy Loaded Sections
 const HeroSection = lazy(() => import("./components/sections/HeroSection"));
@@ -28,8 +27,6 @@ const LoadingSection = () => (
 );
 
 export default function App() {
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-
   return (
     <div className="min-h-screen bg-page-bg text-secondary-text font-sans selection:bg-accent/10 selection:text-accent">
       {/* Skip to Content link for accessibility */}
@@ -40,11 +37,11 @@ export default function App() {
         Skip to content
       </a>
 
-      <Navigation onBookCall={() => setIsCalendlyOpen(true)} />
+      <Navigation />
 
       <main id="main-content">
         <Suspense fallback={<LoadingSection />}>
-          <HeroSection onBookCall={() => setIsCalendlyOpen(true)} />
+          <HeroSection />
 
           <SectionDivider variant="pattern" />
 
@@ -79,11 +76,6 @@ export default function App() {
       </main>
 
       <WhatsAppFloat />
-      
-      <CalendlyModal 
-        isOpen={isCalendlyOpen} 
-        onClose={() => setIsCalendlyOpen(false)} 
-      />
     </div>
   );
 }
