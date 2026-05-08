@@ -28,12 +28,6 @@ export interface PricingPlan {
   popular: boolean;
 }
 
-export interface Testimonial {
-  name: string;
-  location: string;
-  text: string;
-}
-
 export interface Feature {
   title: string;
   description: string;
@@ -45,7 +39,7 @@ export const navLinks: NavLink[] = [
   { name: "Services", href: "#services" },
   { name: "Why Us", href: "#why-us" },
   { name: "Work", href: "#work" },
-  { name: "Reviews", href: "#testimonials" },
+  { name: "Community", href: "#community" },
   { name: "Pricing", href: "#pricing" },
   { name: "Contact", href: "#contact" },
 ];
@@ -141,24 +135,6 @@ export const pricing: PricingPlan[] = [
     ],
     cta: "Launch Store",
     popular: false,
-  },
-];
-
-export const testimonials: Testimonial[] = [
-  {
-    name: "Rajesh Kumar",
-    location: "Hyderabad, India",
-    text: "Webraft Co. transformed our online presence. The new website is fast, beautiful, and has significantly increased our leads.",
-  },
-  {
-    name: "Vikram Reddy",
-    location: "Kakinada, India",
-    text: "Exceptional service and technical expertise. They delivered exactly what we needed for our local business growth.",
-  },
-  {
-    name: "Ananya Rao",
-    location: "Bangalore, India",
-    text: "The attention to detail and modern design aesthetic at Webraft Co. is unmatched. Highly recommend for any business website.",
   },
 ];
 

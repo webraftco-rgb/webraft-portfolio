@@ -15,7 +15,7 @@ const AboutSection = lazy(() => import("./components/sections/AboutSection"));
 const ServicesSection = lazy(() => import("./components/sections/ServicesSection"));
 const WhyChooseUsSection = lazy(() => import("./components/sections/WhyChooseUsSection"));
 const WorkSection = lazy(() => import("./components/sections/WorkSection"));
-const TestimonialsSection = lazy(() => import("./components/sections/TestimonialsSection"));
+const CommunitySection = lazy(() => import("./components/sections/CommunitySection"));
 const PricingSection = lazy(() => import("./components/sections/PricingSection"));
 const ContactSection = lazy(() => import("./components/sections/ContactSection"));
 const Footer = lazy(() => import("./components/sections/Footer"));
@@ -58,10 +58,10 @@ export default function App() {
           <SectionDivider variant="pattern" />
 
           <WorkSection />
-
+          
           <SectionDivider variant="geometric" />
 
-          <TestimonialsSection />
+          <CommunitySection />
 
           <SectionDivider />
 
