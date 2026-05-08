@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="120" height="120" src="https://lh3.googleusercontent.com/pw/AP1GczMVQCImHnTJ2U21W_I4aVI1KftnQc78HluKU9muli7QBLGK_txhmOCY-3Ey2YRvF8Ztf25IBoYZsXgU8jxQAHJ3AnhMFx2sUlz6cdlt99tMhR9MVHOdCVYma_Da1Cvg3D5mtITBbkSt0OGpaSLYdHsF=w913-h913-s-no-gm?authuser=0" alt="Webraft Co. Logo" />
+  <img width="420" height="120" src="https://lh3.googleusercontent.com/pw/AP1GczMVQCImHnTJ2U21W_I4aVI1KftnQc78HluKU9muli7QBLGK_txhmOCY-3Ey2YRvF8Ztf25IBoYZsXgU8jxQAHJ3AnhMFx2sUlz6cdlt99tMhR9MVHOdCVYma_Da1Cvg3D5mtITBbkSt0OGpaSLYdHsF=w913-h913-s-no-gm?authuser=0" alt="Webraft Co. Logo" />
 
   <h1>Webraft Co. — Portfolio</h1>
 
